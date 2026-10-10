@@ -25,7 +25,7 @@
 
 <main class="prose">
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective August 10, 2026 · Expand: Daily Affirmations, published by Promo and co llc</p>
+  <p class="updated">Effective October 10, 2026 (replaces the August 10, 2026 version) · Expand: Daily Affirmations, published by Promo and co llc</p>
 
   <p>Expand is built to be private by design. There are <strong>no accounts and no sign-in</strong> — we don't know who you are, and your personal content never leaves your device. This page explains exactly what data the app touches and why.</p>
 
@@ -44,6 +44,9 @@
   <div class="card">
     <h3>Anonymous usage analytics — PostHog</h3>
     <p>We record anonymous events (for example "affirmation favorited" or "paywall viewed") tied to a random identifier that is not linked to your name, email, or any account — we never have those. This tells us which features matter so we can improve the app. Data is processed by PostHog on US servers.</p>
+    <p>The identifier is a random code the app creates on first launch. It is stored in your device's keychain and synced through iCloud Keychain, so it stays the same if you reinstall the app or move to a new iPhone. That lets us see, for example, whether people who set a morning reminder keep using the app — without ever knowing who they are.</p>
+    <p>Alongside the events we keep an anonymous profile for that identifier: the choices you make in onboarding and settings (goals, followed topics, reminder schedule, app language, and the feminine or masculine sentence form in Polish and Portuguese), whether premium is active, your app version and device model, and your country. Country is derived from your IP address when an event arrives; the IP address itself is discarded immediately and never stored.</p>
+    <p>For a small random sample of sessions (about one in ten) we also record a replay of what was on screen, as a series of screenshots, to spot screens that confuse people. Anything you type in the app is masked in these recordings, and they are deleted after 30 days.</p>
   </div>
 
   <div class="card">
@@ -53,14 +56,20 @@
 
   <div class="card">
     <h3>Purchases — RevenueCat &amp; Apple</h3>
-    <p>Subscriptions are processed entirely by Apple. To know whether premium is unlocked, we use RevenueCat, which receives your purchase receipt and an anonymous identifier — never your Apple ID, name, or payment details.</p>
+    <p>Subscriptions are processed entirely by Apple. To know whether premium is unlocked, we use RevenueCat, which receives your purchase receipt and the same anonymous identifier as our analytics — never your Apple ID, name, or payment details. Because the identifier is shared, a subscription you bought on one device is recognized on your other devices automatically.</p>
+    <p>RevenueCat tells our analytics when a free trial starts, converts to a paid subscription, is cancelled, renews, or is refunded, so we can learn which parts of the app lead people to subscribe. These events carry no payment details.</p>
+  </div>
+
+  <div class="card">
+    <h3>Advertising measurement — Apple, Meta, Google, TikTok</h3>
+    <p>When we advertise Expand, we need to know whether an ad led to an install. We do this only through privacy-preserving mechanisms built by Apple: Apple Search Ads attribution (Apple's AdServices framework) and SKAdNetwork, which sends an aggregate, delayed install signal to the network that showed the ad. These mechanisms do not use an advertising identifier, do not build a profile of you, and never trigger Apple's tracking permission prompt. Ad networks do not receive your analytics identifier or anything you do inside the app.</p>
   </div>
 
   <h2>What we don't do</h2>
   <ul>
     <li>No accounts, no email collection, no contact upload</li>
     <li>No advertising and no ad networks</li>
-    <li>No tracking across other apps or websites (we do not use the identifier for advertisers, and the app never shows Apple's tracking permission prompt because it doesn't track)</li>
+    <li>No tracking across other apps or websites (the identifier is used only inside Expand, is never shared with advertisers, and the app never shows Apple's tracking permission prompt because it doesn't track)</li>
     <li>No selling or sharing of data with data brokers — ever</li>
   </ul>
 
@@ -68,16 +77,16 @@
   <p>Reminders use local notifications scheduled on your device; nothing about them is sent to us. If you save an affirmation card to your photo library, the app asks for add-only photo access and writes just that image. Both permissions are optional.</p>
 
   <h2>Where data is processed, and for how long</h2>
-  <p>The anonymous analytics, crash, and purchase data described above is processed in the United States by the providers named. By using Expand you consent to that transfer, wherever you are located. We keep this data only as long as it serves its purpose: crash reports are automatically deleted by Sentry after 90 days, purchase state is kept by RevenueCat for as long as needed to honor your subscription, and anonymous analytics are kept while we actively use them to improve the app. None of it identifies you personally, and you can request deletion at any time via the email below.</p>
+  <p>The anonymous analytics, crash, and purchase data described above is processed in the United States by the providers named. By using Expand you consent to that transfer, wherever you are located. We keep this data only as long as it serves its purpose: crash reports are automatically deleted by Sentry after 90 days, session replays after 30 days, purchase state is kept by RevenueCat for as long as needed to honor your subscription, and anonymous analytics are kept while we actively use them to improve the app. None of it identifies you personally, and you can request deletion at any time via the email below.</p>
 
   <h2>Your rights</h2>
-  <p>Depending on where you live (for example under the GDPR in Europe or the CCPA in California), you may have the right to access, correct, delete, restrict, or receive a copy of data concerning you, and to withdraw consent at any time. Because our data is anonymous and your content is on-device, the practical answers are usually immediate — deleting the app deletes your content, and reinstalling resets your analytics identifier — but for any request, email <a href="mailto:hello@getexpand.app">hello@getexpand.app</a> and we will act on it. You also have the right to lodge a complaint with your local data-protection authority.</p>
+  <p>Depending on where you live (for example under the GDPR in Europe or the CCPA in California), you may have the right to access, correct, delete, restrict, or receive a copy of data concerning you, and to withdraw consent at any time. Because our data is anonymous and your content is on-device, the practical answers are usually immediate — deleting the app deletes your content — but for any request, including deleting the anonymous analytics record tied to your identifier, email <a href="mailto:hello@getexpand.app">hello@getexpand.app</a> and we will act on it. You also have the right to lodge a complaint with your local data-protection authority.</p>
 
   <h2>Children</h2>
   <p>Expand is a general-audience app and is not directed at children under 13. We do not knowingly collect personal information from anyone, including children.</p>
 
   <h2>Your choices</h2>
-  <p>Because everything personal lives on your device, deleting the app removes your data. Analytics identifiers are random and reset if you reinstall. For any privacy question or request, email us and we'll help: <a href="mailto:hello@getexpand.app">hello@getexpand.app</a>.</p>
+  <p>Because everything personal lives on your device, deleting the app removes your data. The analytics identifier is random and kept in your device's keychain so it survives a reinstall; if you want the anonymous record behind it deleted, tell us the approximate date you installed and we'll remove it. For any privacy question or request, email us and we'll help: <a href="mailto:hello@getexpand.app">hello@getexpand.app</a>.</p>
 
   <h2>Who we are</h2>
   <p>Expand: Daily Affirmations is published by <strong>Promo and co llc</strong>, the data controller for the processing described on this page.</p>
