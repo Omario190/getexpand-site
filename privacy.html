@@ -65,6 +65,11 @@
     <p>When we advertise Expand, we need to know whether an ad led to an install. We do this only through privacy-preserving mechanisms built by Apple: Apple Search Ads attribution (Apple's AdServices framework) and SKAdNetwork, which sends an aggregate, delayed install signal to the network that showed the ad. These mechanisms do not use an advertising identifier, do not build a profile of you, and never trigger Apple's tracking permission prompt. Ad networks do not receive your analytics identifier or anything you do inside the app.</p>
   </div>
 
+  <div class="card">
+    <h3>Push notifications and in-app messages — OneSignal</h3>
+    <p>Besides the reminders scheduled on your device, we can send occasional messages about the app — a tip, a seasonal offer, or a reminder to pick up where you left off — through OneSignal. To deliver them, OneSignal stores your device's push token together with the same anonymous identifier as our analytics and a few preference tags: app language, affirmation gender, whether premium is active, the goals you picked during onboarding, whether notifications are allowed, and whether the device belongs to our team. Nothing you write or favorite is included. These messages are sent only if you have allowed notifications, and turning notifications off for Expand in iOS Settings stops them.</p>
+  </div>
+
   <h2>What we don't do</h2>
   <ul>
     <li>No accounts, no email collection, no contact upload</li>
@@ -74,10 +79,10 @@
   </ul>
 
   <h2>Notifications, photos, and permissions</h2>
-  <p>Reminders use local notifications scheduled on your device; nothing about them is sent to us. If you save an affirmation card to your photo library, the app asks for add-only photo access and writes just that image. Both permissions are optional.</p>
+  <p>Daily reminders use local notifications scheduled on your device; nothing about them is sent to us. The occasional messages described above are delivered through OneSignal using your device's push token. If you save an affirmation card to your photo library, the app asks for add-only photo access and writes just that image. Both permissions are optional.</p>
 
   <h2>Where data is processed, and for how long</h2>
-  <p>The anonymous analytics, crash, and purchase data described above is processed in the United States by the providers named. By using Expand you consent to that transfer, wherever you are located. We keep this data only as long as it serves its purpose: crash reports are automatically deleted by Sentry after 90 days, session replays after 30 days, purchase state is kept by RevenueCat for as long as needed to honor your subscription, and anonymous analytics are kept while we actively use them to improve the app. None of it identifies you personally, and you can request deletion at any time via the email below.</p>
+  <p>The anonymous analytics, crash, notification, and purchase data described above is processed in the United States by the providers named. By using Expand you consent to that transfer, wherever you are located. We keep this data only as long as it serves its purpose: crash reports are automatically deleted by Sentry after 90 days, session replays after 30 days, push tokens and preference tags are kept by OneSignal only while the app is installed and notifications are allowed, purchase state is kept by RevenueCat for as long as needed to honor your subscription, and anonymous analytics are kept while we actively use them to improve the app. None of it identifies you personally, and you can request deletion at any time via the email below.</p>
 
   <h2>Your rights</h2>
   <p>Depending on where you live (for example under the GDPR in Europe or the CCPA in California), you may have the right to access, correct, delete, restrict, or receive a copy of data concerning you, and to withdraw consent at any time. Because our data is anonymous and your content is on-device, the practical answers are usually immediate — deleting the app deletes your content — but for any request, including deleting the anonymous analytics record tied to your identifier, email <a href="mailto:hello@getexpand.app">hello@getexpand.app</a> and we will act on it. You also have the right to lodge a complaint with your local data-protection authority.</p>
